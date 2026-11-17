@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Score Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Score Calculator</h1>
+
+    <p>Enter student scores to calculate totals and grades automatically.</p>
+    <p>Each score must be between 0 and 100.</p>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>CA 1</th>
+                    <th>CA 2</th>
+                    <th>CA 3</th>
+                    <th>Exam</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+
+                <tr>
+                    <td>Student 1</td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td class="total">0</td>
+                    <td class="grade">-</td>
+                </tr>
+
+                <tr>
+                    <td>Student 2</td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td class="total">0</td>
+                    <td class="grade">-</td>
+                </tr>
+
+                <tr>
+                    <td>Student 3</td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td class="total">0</td>
+                    <td class="grade">-</td>
+                </tr>
+
+                <tr>
+                    <td>Student 4</td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td class="total">0</td>
+                    <td class="grade">-</td>
+                </tr>
+
+                <tr>
+                    <td>Student 5</td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td><input type="number" class="score" min="0" max="100"></td>
+                    <td class="total">0</td>
+                    <td class="grade">-</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="summary">
+        <h3>Class Summary</h3>
+        <p id="classAverage">Class Average: 0</p>
+        <p id="passCount">Students Passed: 0</p>
+        <p id="failCount">Students Failed: 0</p>
+    </div>
+
+    <button id="resetButton">Reset Scores</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
